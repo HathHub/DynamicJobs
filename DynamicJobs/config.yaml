@@ -1,0 +1,18 @@
+# See https://openmod.github.io/openmod-docs/devdoc/concepts/configuration.html
+# You can delete this file if you do not need a configuration
+
+UI:
+  ServerName: "<color=#6CACE4><b>Argentina</b></color> Roleplay"
+  Jobs:
+  - perm: people
+    url: "https://i.imgur.com/TJll7YH.png"
+    color: "#FFD700"  
+  - perm: policia
+    url: "https://i.imgur.com/UKQ6Trz.png"
+    color: "#FFD700"
+  - perm: mecanico
+    url: "https://i.imgur.com/JS7juPr.png"
+    color: "#FFD700"
+  - perm: ems
+    url: "https://i.imgur.com/nJL8btc.png"
+    color: "#FFD700"
