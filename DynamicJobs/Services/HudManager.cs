@@ -16,6 +16,15 @@ using SDG.Unturned;
 // For more, visit https://openmod.github.io/openmod-docs/devdoc/guides/getting-started.html
 namespace DynamicJobs.Services
 {
+    [Service]
+    public interface IHudManager
+    {
+        Task LoadJobCounter(ITransportConnection transport, string experience);
+        Task RegisterCount(UnturnedUser user);
+        Task DeRegisterCount(UnturnedUser user);
+        Task UpdateExperience(ITransportConnection transport, string experience);
+    }
+
     [PluginServiceImplementation(Lifetime = ServiceLifetime.Singleton, Priority = Priority.Lowest)]
     public class HudManager : IHudManager
     {
