@@ -3,6 +3,7 @@ using System.Threading.Tasks;
 using DynamicJobs.Services;
 using OpenMod.API.Eventing;
 using OpenMod.API.Permissions;
+using OpenMod.Unturned.Players.Inventory.Events;
 using OpenMod.Unturned.Users.Events;
 using SDG.Unturned;
 

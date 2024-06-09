@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Threading.Tasks;
 using Cysharp.Threading.Tasks;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Localization;
@@ -15,7 +14,6 @@ using OpenMod.Unturned.Users;
 using SDG.Unturned;
 using Steamworks;
 
-// For more, visit https://openmod.github.io/openmod-docs/devdoc/guides/getting-started.html
 namespace DynamicJobs.Events
 {
     public class JobConfig
@@ -25,10 +23,32 @@ namespace DynamicJobs.Events
 
         public class Job
         {
-            public string Id { get; set; }
             public string Perm { get; set; }
             public string Url { get; set; }
             public string Color { get; set; }
+            public bool RequiresService { get; set; }
+        }
+    }
+
+    public class MenuConfig
+    {
+        public List<MenuJob> Jobs { get; set; }
+
+        public class MenuJob
+        {
+            public string Name { get; set; }
+            public string Perm { get; set; }
+            public string ShortDesc { get; set; }
+            public string LongDesc { get; set; }
+            public string ImageUrl { get; set; }
+            public SalaryConfig Salary { get; set; }
+
+            public class SalaryConfig
+            {
+                public bool Enabled { get; set; }
+                public int Time { get; set; }
+                public int Amount { get; set; }
+            }
         }
     }
 }

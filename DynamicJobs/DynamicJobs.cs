@@ -25,7 +25,9 @@ namespace DynamicJobs
         private readonly IPermissionRegistry m_PermissionRegistry;
 
         public JobConfig JobConfig { get; private set; }
+        public MenuConfig MenuConfig;
         public JobsStorage JobsStorage { get; set; }
+        public ServiceStorage ServiceStorage { get; set; }
 
         public DynamicJobs(
             IConfiguration configuration,
@@ -43,11 +45,18 @@ namespace DynamicJobs
         {
             // await UniTask.SwitchToMainThread(); uncomment if you have to access Unturned or UnityEngine APIs
             m_Logger.LogInformation("Hello World!");
+
             JobConfig = new JobConfig();
             m_Configuration.GetSection("UI")
                 .Bind(JobConfig);
+
+            MenuConfig = new MenuConfig();
+            m_Configuration.GetSection("Menu")
+                .Bind(MenuConfig);
+
             m_Logger.LogInformation(JobConfig.ToJson());
             m_Logger.LogInformation($"Loaded {JobConfig.Jobs.Count()} job counters!");
+            ServiceStorage = new ServiceStorage();
             JobsStorage = new JobsStorage();
             foreach(var item in JobConfig.Jobs)
             {

@@ -2,17 +2,118 @@
 # You can delete this file if you do not need a configuration
 
 UI:
-  ServerName: "<color=#6CACE4><b>Argentina</b></color> Roleplay"
+  ServerName: "<color=red><b>Servidor</b></color> Roleplay"
   Jobs:
-  - perm: people
-    url: "https://i.imgur.com/TJll7YH.png"
-    color: "#FFD700"  
-  - perm: policia
-    url: "https://i.imgur.com/UKQ6Trz.png"
-    color: "#FFD700"
-  - perm: mecanico
-    url: "https://i.imgur.com/JS7juPr.png"
-    color: "#FFD700"
-  - perm: ems
-    url: "https://i.imgur.com/nJL8btc.png"
-    color: "#FFD700"
+    - perm: people
+      url: "https://i.imgur.com/TJll7YH.png"
+      color: "#FFD700"
+      requiresService: false
+    - perm: policia
+      url: "https://i.imgur.com/UKQ6Trz.png"
+      color: "#FFD700"
+      requiresService: true
+    - perm: mecanico
+      url: "https://i.imgur.com/JS7juPr.png"
+      color: "#FFD700"
+      requiresService: true
+    - perm: ems
+      url: "https://i.imgur.com/nJL8btc.png"
+      color: "#FFD700"
+      requiresService: true
+    - perm: staff
+      url: "https://i.imgur.com/2tHu5dJ.png"
+      color: "#FFD700"
+      requiresService: false
+
+Menu:
+  Jobs:
+    - Name: "Trabajo 1"
+      Perm: "policia"
+      ShortDesc: "Es habitual que la policía trabaje de manera preventiva (con oficiales en la calle para disuadir la comisión de delitos) y que actúe en casos de emergencia (cuando el delito ya está en marcha)."
+      LongDesc: "blablabla"
+      ImageUrl: "https://i.imgur.com/UKQ6Trz.png"
+      Salary:
+        enabled: true
+        time: 12000
+        amount: 10000
+    - Name: "Trabajo 2"
+      Perm: "policia"
+      ShortDesc: "Es habitual que la policía trabaje de manera preventiva (con oficiales en la calle para disuadir la comisión de delitos) y que actúe en casos de emergencia (cuando el delito ya está en marcha)."
+      LongDesc: "blablabla"
+      ImageUrl: "https://i.imgur.com/UKQ6Trz.png"
+      Salary:
+        enabled: true
+        time: 12000
+        amount: 10000
+    - Name: "Trabajo 3"
+      Perm: "policia"
+      ShortDesc: "Es habitual que la policía trabaje de manera preventiva (con oficiales en la calle para disuadir la comisión de delitos) y que actúe en casos de emergencia (cuando el delito ya está en marcha)."
+      LongDesc: "blablabla"
+      ImageUrl: "https://i.imgur.com/UKQ6Trz.png"
+      Salary:
+        enabled: true
+        time: 12000
+        amount: 10000
+    - Name: "Trabajo 4"
+      Perm: "policia"
+      ShortDesc: "Es habitual que la policía trabaje de manera preventiva (con oficiales en la calle para disuadir la comisión de delitos) y que actúe en casos de emergencia (cuando el delito ya está en marcha)."
+      LongDesc: "blablabla"
+      ImageUrl: "https://i.imgur.com/UKQ6Trz.png"
+      Salary:
+        enabled: true
+        time: 12000
+        amount: 10000
+    - Name: "Trabajo 5"
+      Perm: "policia"
+      ShortDesc: "Es habitual que la policía trabaje de manera preventiva (con oficiales en la calle para disuadir la comisión de delitos) y que actúe en casos de emergencia (cuando el delito ya está en marcha)."
+      LongDesc: "blablabla"
+      ImageUrl: "https://i.imgur.com/UKQ6Trz.png"
+      Salary:
+        enabled: true
+        time: 12000
+        amount: 10000
+    - Name: "Trabajo 6"
+      Perm: "policia"
+      ShortDesc: "Es habitual que la policía trabaje de manera preventiva (con oficiales en la calle para disuadir la comisión de delitos) y que actúe en casos de emergencia (cuando el delito ya está en marcha)."
+      LongDesc: "blablabla"
+      ImageUrl: "https://i.imgur.com/UKQ6Trz.png"
+      Salary:
+        enabled: true
+        time: 12000
+        amount: 10000
+    - Name: "Trabajo 7"
+      Perm: "policia"
+      ShortDesc: "Es habitual que la policía trabaje de manera preventiva (con oficiales en la calle para disuadir la comisión de delitos) y que actúe en casos de emergencia (cuando el delito ya está en marcha)."
+      LongDesc: "blablabla"
+      ImageUrl: "https://i.imgur.com/UKQ6Trz.png"
+      Salary:
+        enabled: true
+        time: 12000
+        amount: 10000
+    - Name: "Trabajo 8"
+      Perm: "policia"
+      ShortDesc: "Es habitual que la policía trabaje de manera preventiva (con oficiales en la calle para disuadir la comisión de delitos) y que actúe en casos de emergencia (cuando el delito ya está en marcha)."
+      LongDesc: "blablabla"
+      ImageUrl: "https://i.imgur.com/UKQ6Trz.png"
+      Salary:
+        enabled: true
+        time: 12000
+        amount: 10000
+    - Name: "Trabajo 9"
+      Perm: "policia"
+      ShortDesc: "Es habitual que la policía trabaje de manera preventiva (con oficiales en la calle para disuadir la comisión de delitos) y que actúe en casos de emergencia (cuando el delito ya está en marcha)."
+      LongDesc: "blablabla"
+      ImageUrl: "https://i.imgur.com/UKQ6Trz.png"
+      Salary:
+        enabled: true
+        time: 12000
+        amount: 10000
+    - Name: "Trabajo 10"
+      Perm: "policia"
+      ShortDesc: "Es habitual que la policía trabaje de manera preventiva (con oficiales en la calle para disuadir la comisión de delitos) y que actúe en casos de emergencia (cuando el delito ya está en marcha)."
+      LongDesc: "blablabla"
+      ImageUrl: "https://i.imgur.com/UKQ6Trz.png"
+      Salary:
+        enabled: true
+        time: 12000
+        amount: 10000
